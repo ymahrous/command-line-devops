@@ -10,3 +10,9 @@ format:
 
 test:
 	python -m pytest -vv --cov=hello test_hello.py
+
+all:
+	make install &&\
+	make lint &&\
+	make format &&\
+	make test
